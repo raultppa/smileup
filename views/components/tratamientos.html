@@ -1,0 +1,76 @@
+<h2 class="m-3">Tratamientos</h2>
+    
+<!-- Formulario para Agregar/Modificar Pacientes -->
+<label class="mt-3 m-3"><b id="lblTratamiento">Registrar nuevo Tratamiento:</b></label>
+<form class="m-3" id="formTratamiento">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <label class="pl-2">Ingrese un Tratamiento:</label>
+            <div class="form-group m-2">
+                <input type="text" id="idTratamiento" class="form-control">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <label class="pl-2">Precio:</label>
+            <div class="form-group m-2 space-between-h">
+                <input type="text" id="idPrecio" class="form-control col-10" style="display: initial; width: 95%; border-radius: 5px 0 0 5px;">
+                <button type="button" disabled class="btn-ter2 bg5 flex-center" style="cursor: initial ;width:5%; border-radius: 0 5px 5px 0;">$</button>
+            </div>
+        </div>
+		<div class="col-12 col-md-8">
+            <label class="pl-2">Ingrese el tipo de servicio:</label>
+            <div class="form-group m-2">
+                <select id="idServicio" class="form-control">
+                    <option value="">--Seleccione una Opcion--</option>
+                <!--<option value="Odontopediatría">Odontopediatría</option>
+                    <option value="Endodoncia">Endodoncia</option>
+                    <option value="Ortodoncia">Ortodoncia</option>
+                    <option value="Periodoncia">Periodoncia</option> -->
+                </select>
+            </div>
+		</div>
+		<div class="col-12 col-md-4">
+            <label class="pl-2">&nbsp;</label>
+            <div class="form-group m-2 space-between-h">
+                <button type="button" id="idRegistrar" class="btn-ter flex-center" style="width:100%;"><i class="icon-floppy-disk"></i>&nbsp;Registrar</button>
+                <div id="idContentM" class="space-between-h" style="width:100%">
+                    <button type="button" id="idModificar" class="btn-ter2 bg3 flex-center" style="width:80%;"><i class="icon-pen-to-square"></i>&nbsp;Modificar</button>
+                    <button type="button" id="idCancelar" class="btn-ter flex-center" style="width:18%; margin-left: 2px;"><i class="icon-arrow-left"></i></button>
+                </div>
+            </div>
+        </div>
+</form>
+
+<!-- Listado de Pacientes -->
+
+<label class="mt-4"><b>Tratamientos Registrados:</b></label>
+<div class="container hidden-scroll">
+	<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tratamiento</th>
+            <th>Tipo de Servicio</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="listaTratamientos">
+    <!-- Datos ficticios de tipos de tratamientos de odontología -->
+    <!--<tr class="select-index">
+            <td>1</td>
+            <td>Rellenos Dentales</td>
+            <td>Ortodoncia</td>
+            <td>99$</td>
+            <td style="display:none;">1</td>
+            <td>
+	            <button type="button" class="btn-ter2 p-2 m-0 bg3 btnSeleccionar" style="padding-bottom: 4px;"><i class="icon-pen-to-square btnSeleccionar"></i></button>
+                <button type="button" class="btn-ter2 p-2 m-0 bg1 btnEliminar" style="padding-bottom: 4px;"><i class="icon-xmark btnEliminar" ></i></button>
+	        </td>
+        </tr> -->
+        <!-- Puedes agregar más filas con tipos de servicios aquí -->
+    </tbody>
+</table>
+</div>
+<script type="module" src="/scripts/tratamientos/tratamientos.js"></script>
+

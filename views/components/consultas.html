@@ -1,0 +1,147 @@
+<h2 class="m-3">Consultas</h2>
+
+<!-- Formulario para Agregar/Modificar Pacientes -->
+<label class="mt-3 m-3"><b>Registrar nueva Consulta:</b></label>
+<form class="m-3">
+	<div class="row">
+		<div class="col-12">
+			<div class="form-group m-2 space-between-h">
+				<input type="text" id="idTelefono" class="form-control col-10" placeholder="Cedula" style="display: initial; width: 78%; border-radius: 5px 0 0 5px;">
+				<button type="submit" class="btn-ter flex-center" style="width: 22%; border-radius: 0 5px 5px 0;">Buscar</button>
+			</div>
+		</div>
+		<div class="col-12 col-md-6 ">
+			<div class="form-group m-2">
+				<input type="text" id="idNombres" class="form-control bg-gray" placeholder="Nombres" readonly>
+			</div>
+		</div>
+		<div class="col-12 col-md-6">
+			<div class="form-group m-2">
+				<input type="text" id="idApellidos" class="form-control bg-gray" placeholder="Apellidos" readonly>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="form-group m-2">
+				<select class="form-control">
+					<option class="" selected="">Seleccione un Especialista</option>
+					<option value="1">Dra. María Pérez - Ortodoncista</option>
+					<option value="2">Dr. Juan López - Periodoncista</option>
+					<option value="3">Dra. Ana Rodríguez - Endodoncista</option>
+					<option value="4">Dr. Carlos Martínez - Cirujano Dental</option>
+					<option value="5">Dra. Laura Sánchez - Odontopediatra</option>>
+				</select>
+			</div>
+		</div>
+		<label class="mt-4 m-3 col-12"><b>Tratamientos Realizados:</b></label>
+		<div class="col-12 m-2 row space-around-h card">
+
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento1" name="tratamiento" value="tratamiento1">
+				<label for="tratamiento1">Limpieza Dental</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento2" name="tratamiento" value="tratamiento2">
+				<label for="tratamiento2">Blanqueamiento Dental</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento3" name="tratamiento" value="tratamiento3">
+				<label for="tratamiento3">Ortodoncia</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento4" name="tratamiento" value="tratamiento4">
+				<label for="tratamiento4">Extracción de Muelas del Juicio</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento5" name="tratamiento" value="tratamiento5">
+				<label for="tratamiento5">Implantes Dentales</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento6" name="tratamiento" value="tratamiento6">
+				<label for="tratamiento6">Endodoncia</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento7" name="tratamiento" value="tratamiento7">
+				<label for="tratamiento7">Odontopediatría</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento8" name="tratamiento" value="tratamiento8">
+				<label for="tratamiento8">Cirugía Oral</label><br>
+			</div>
+			<div class="form-group m-2 col-8 col-md-3">
+				<input type="checkbox" id="tratamiento9" name="tratamiento" value="tratamiento9">
+				<label for="tratamiento9">Tratamiento de Caries</label><br>
+			</div>
+
+		</div>
+		<div class="col-12">
+			<div class="form-group m-2">
+				<textarea id="message" class="form-control" rows="4" placeholder="Diagnóstico"></textarea>
+			</div>	
+		</div>
+		<div class="col-12">
+			<div class="form-group m-2">
+				<button type="submit" class="btn-ter" style="width:100%;"><i class="icon-calendar-plus"></i> Registrar Consulta</button>
+			</div>	
+		</div>
+	</div>
+</form>
+<!-- Listado de Pacientes -->
+<label class="mt-4 m-3"><b>Seleccionar pacientes Registrados:</b></label>
+<div class="container hidden-scroll">
+	<table>
+		<thead>
+			<tr>
+				<th>Cédula</th>
+				<th>Nombres</th>
+				<th>Apellidos</th>
+				<th>Teléfonos</th>
+				<th>Dirección</th>
+				<th>Fecha de Nacimiento</th>
+			</tr>
+		</thead>
+		<tbody id="listaPacientes">
+			<!-- Datos ficticios de pacientes -->
+			<tr class="select-index">
+				<td>18765432</td>
+				<td>Carlos Eduardo</td>
+				<td>Rodríguez Pérez</td>
+				<td>04142345678 / 021223</td>
+				<td>Avenida Los Leones</td>
+				<td>1989-05-15</td>
+			</tr>
+			<tr class="select-index">
+				<td>18765432</td>
+				<td>Carlos Eduardo</td>
+				<td>Rodríguez Pérez</td>
+				<td>04142345678 / 021223</td>
+				<td>Avenida Los Leones</td>
+				<td>1989-05-15</td>
+			</tr>
+			<tr class="select-index">
+				<td>18765432</td>
+				<td>Carlos Eduardo</td>
+				<td>Rodríguez Pérez</td>
+				<td>04142345678 / 021223</td>
+				<td>Avenida Los Leones</td>
+				<td>1989-05-15</td>
+			</tr>
+			<tr class="select-index">
+				<td>18765432</td>
+				<td>Carlos Eduardo</td>
+				<td>Rodríguez Pérez</td>
+				<td>04142345678 / 021223</td>
+				<td>Avenida Los Leones</td>
+				<td>1989-05-15</td>
+			</tr>
+			<tr class="select-index">
+				<td>18765432</td>
+				<td>Carlos Eduardo</td>
+				<td>Rodríguez Pérez</td>
+				<td>04142345678 / 021223</td>
+				<td>Avenida Los Leones</td>
+				<td>1989-05-15</td>
+			</tr>
+			<!-- Puedes agregar más filas con datos ficticios aquí -->
+		</tbody>
+	</table>
+</div>

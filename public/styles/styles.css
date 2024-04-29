@@ -1,0 +1,539 @@
+/* Paleta de colores */
+:root {
+  --primary-color     : #8364ff;
+  --primary-color-rgba: 139, 64, 247, 0.25;
+  --secondary-color   : #a690fd;
+  --tertiary-color    : #44c997;
+  --quaternary-color  : #8b8b8b29;
+
+  --red-color : #EA1179;
+  --blue-color : #279EFF;
+
+}
+
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de fondo y tipografía */
+body {
+  background-color: var(--quaternary-color); /* Fondo más claro */
+  color: #333;
+}
+
+label{
+  font-size: 15px;
+}
+p{
+  font-size: 14px;
+}
+
+/* Colores de Fondo */
+.bg1{
+  background-color: var(--red-color);
+}
+.bg2{
+  background-color: var(--blue-color);
+}
+.bg3{
+  background-color: var(--secondary-color);
+}
+.bg4{
+  background-color: var(--tertiary-color);
+}
+.bg5{
+  background-color: #3b3b3b;
+}
+
+/* Aplicar la tipografía a todos los elementos */
+* {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Sistema de grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Tamaños de columnas */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* Define los tamaños para dispositivos pequeños */
+@media (min-width: 850px) {
+  .col-md-1 { width: 8.33%; }
+  .col-md-2 { width: 16.66%; }
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.33%; }
+  .col-md-5 { width: 41.66%; }
+  .col-md-6 { width: 50%; }
+  .col-md-7 { width: 58.33%; }
+  .col-md-8 { width: 66.66%; }
+  .col-md-9 { width: 75%; }
+  .col-md-10 { width: 83.33%; }
+  .col-md-11 { width: 91.66%; }
+  .col-md-12 { width: 100%; }
+}
+
+/* Define los tamaños para dispositivos medianos */
+@media (min-width: 1200px) {
+  .col-lg-1 { width: 8.33%; }
+  .col-lg-2 { width: 16.66%; }
+  .col-lg-3 { width: 25%; }
+  .col-lg-4 { width: 33.33%; }
+  .col-lg-5 { width: 41.66%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-7 { width: 58.33%; }
+  .col-lg-8 { width: 66.66%; }
+  .col-lg-9 { width: 75%; }
+  .col-lg-10 { width: 83.33%; }
+  .col-lg-11 { width: 91.66%; }
+  .col-lg-12 { width: 100%; }
+  .col-l-custom { width: 13%; }
+  .col-r-custom { width: 87%; }
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+/* Estilos para botones */
+.btn {
+  display: inline-block;
+  padding: 6px 9px 0px 9px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color); /* Botones más oscuros */
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-ter {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--tertiary-color); /* Botones más oscuros */
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn-ter2 {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b09cff69; /* Botones más claros en hover */
+}
+
+.btn-ter:hover {
+  background-color: var(--primary-color); /* Botones más claros en hover */
+}
+
+/* Estilos para el control de formulario */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+textarea{
+  resize: vertical; /* Evita que el textarea se expanda horizontalmente */
+}
+
+
+/* Sistema de márgenes */
+.m-0 {
+  margin: 2px;
+}
+
+.m-1 {
+  margin: 4px;
+}
+
+.m-2 {
+  margin: 8px;
+}
+
+.m-3 {
+  margin: 12px;
+}
+
+.ml-0 {
+  margin-left: 2px;
+}
+
+.ml-1 {
+  margin-left: 4px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.ml-3 {
+  margin-left: 12px;
+}
+
+/* Sistema de márgenes */
+.p-1 {
+  padding: 4px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.p-3 {
+  padding: 12px;
+}
+
+/* Sistema de márgenes */
+.pl-1 {
+  padding-left: 4px;
+}
+
+.pl-2 {
+  padding-left: 8px;
+}
+
+.pl-3 {
+  padding-left: 12px;
+}
+
+/* Sistema de márgenes */
+.pr-1 {
+  padding-right: 4px;
+}
+
+.pr-2 {
+  padding-right: 8px;
+}
+
+.pr-3 {
+  padding-right: 12px;
+}
+
+
+/* Agrega más clases para otros tamaños de márgenes si es necesario */
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.mt-rem{
+  margin-top: 1rem;
+}
+
+/* Estilos para el card */
+.card {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 9px rgba(var(--primary-color-rgba)); /* Sombra suave con color primario */
+  padding: 16px;
+}
+
+/* Estilos para el título del card */
+.card-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--primary-color); /* Color primario */
+}
+
+/* Estilos para el contenido del card */
+.card-content {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilos para el pie del card (opcional) */
+.card-footer {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.text-start{
+  text-align: center;
+}
+
+.horizontal-scroll{
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 850px) {
+  
+  .horizontal-scroll{
+    display: grid;
+    flex-wrap:nowrap;
+    height: 250px;
+  }
+
+  .btn{
+    padding: 6px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  .horizontal-scroll{
+    display: grid;
+    flex-wrap:nowrap;
+    height: initial;
+  }
+
+  .text-start{
+    text-align: inherit;
+  }
+
+  .btn{
+    padding: 8px 9px;
+  }
+}
+
+/* Clases para alinear horizontalmente */
+.flex-center-h {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-start-h {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end-h {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.space-between-h {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-around-h {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Clases para alinear verticalmente */
+.flex-center-v {
+  display: flex;
+  align-items: center;
+}
+
+.flex-start-v {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-end-v {
+  display: flex;
+  align-items: flex-end;
+}
+
+.stretch-v {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Clases para alinear en ambas direcciones */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.stretch {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+/* Estilos generales para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  overflow-x: hidden;
+  font-weight: 600;
+}
+
+/* Estilos para las celdas del encabezado */
+th {
+  padding: 10px;
+  background-color: var(--quaternary-color);
+  border-bottom: 1px solid var(--primary-color);
+  text-align: left;
+}
+
+/* Estilos para las celdas de datos */
+td {
+  padding: 7px;
+  border-bottom: 1px solid grey;
+  text-align: left;
+}
+
+/* Estilos para las filas al pasar el cursor por encima */
+tr:hover {
+  background-color: var(--quaternary-color);
+}
+
+.hidden-scroll{
+  overflow: auto;
+}
+
+/* Estilos para hacer la tabla responsive */
+/* Si el ancho de la pantalla es menor o igual a 768px */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    overflow-x: auto; /* Agregamos el scroll horizontal */
+  }
+}
+
+/* Estilos para hacer la tabla más legible en dispositivos móviles */
+/* Puedes ajustar estos estilos según tus preferencias */
+@media (max-width: 576px) {
+  th, td {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+.no-seleccionable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    cursor: pointer;
+}
+
+.select-index {
+    cursor: pointer;
+}
+
+a{
+  text-decoration:none;
+}
+.color-tooth{
+  color: white;
+  transform: scaleX(-1);
+  writing-mode: vertical-lr;
+}
+
+.menu{
+  background-color: var(--primary-color);
+  border: 5px solid var(--primary-color); 
+  border-radius: 8px;
+  box-shadow: 0 2px 9px rgba(var(--primary-color-rgba));
+}
+
+
+.bg-gray{
+  background-color: #8e82c130;
+}
+
+.inline{
+  display: inline-flex;
+  width: inherit;
+}
+
+/* inputs */
+
+.input-telefono{
+  display: initial; 
+  width: 50%; 
+  border-radius: 5px 0 0 5px;
+}
+
+.input-telefono2{
+
+  width:50%; 
+  border-radius: 0 5px 5px 0;
+}
+
+.input-plus{
+  width:50%; 
+  border-radius: 0 5px 5px 0;
+}
+
+.radio-buttons{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
